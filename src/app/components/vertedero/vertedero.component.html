@@ -1,0 +1,36 @@
+<div class="row fondo">
+  <div class="col-sm-12 text-center">
+    <h5 class="h5">Vertedero de Entrada</h5>
+  </div>
+</div>
+
+<div class="row fondo">
+  <div class="col-sm-5 p-0" *ngIf="!active">
+      <app-loading></app-loading>
+  </div>
+  <div class="col-sm-5  p-0" *ngIf="active">
+    <div class="text-center mb-2">
+      <app-volumen [data]="nivel"></app-volumen>
+    </div>
+    <actuador [data]="actuador"></actuador>
+  </div>
+  <div class="col-sm-7">
+    <div class="text-center" *ngIf="!active">
+        <app-loading></app-loading>
+    </div>
+    <ion-card style="max-height: 300px;" *ngIf="active">
+      <app-property [data]="caudal" titulo="Caudal" pro="L/s"></app-property>
+      <app-property [data]="temperatura" titulo="Temperatura" pro="°C"></app-property>
+      <app-property [data]="ph" titulo="Ph" pro="pH"></app-property>
+      <app-property [data]="turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+      <app-property [data]="conductividad" titulo="Conductividad" pro="uS"></app-property>
+    </ion-card>
+  </div>
+</div>
+<div class="row fondo" *ngIf="active">
+  <div class="col-sm-12">
+    <ion-card color="light" class="p-2">
+      <app-graphic></app-graphic>
+    </ion-card>
+  </div>
+</div>

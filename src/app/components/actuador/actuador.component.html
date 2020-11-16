@@ -1,0 +1,20 @@
+<ion-card color="light" class="mb-1 mt-0">
+    <div class="table-responsive-sm">
+      <table class="table table-hover table-light table-sm mt-1">
+          <tbody>
+            <tr>
+              <th scope="row text-center" style="width: 20%">{{numero}}</th>
+              <td class="p-0 m-0 text-center" style="width: 30%;">
+                <img src="/assets/icon/lm.png" class="icono" alt="" *ngIf="tipo==0">
+                <img src="/assets/icon/bray.png" class="icono" alt="" *ngIf="tipo==1">
+                <img src="/assets/icon/rk.png" class="icono" alt="" *ngIf="tipo==2">
+              </td>       
+              <td class="text-center" style="width: 20%">{{status}}</td>
+              <td class="text-center" style="width: 20%">{{pos}}%</td>
+            </tr>
+          </tbody>
+        </table>
+       
+      </div>
+</ion-card>
+

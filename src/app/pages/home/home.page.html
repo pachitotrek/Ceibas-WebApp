@@ -1,0 +1,49 @@
+<ion-header>
+    <app-menu></app-menu>
+</ion-header>
+
+<ion-content>
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+            <div class="banner" style="background-image: url(/assets/img/vertedero.jpg);" [routerLink]="['/uno']" >
+                <div class="layer d-flex align-items-center justify-content-center">
+                    <ion-item color="primary">
+                        <h1 class="h1 font-weight-bold text-center">Vertedero de Entrada</h1>
+                    </ion-item>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="banner" style="background-image: url(/assets/img/filtros.jpeg);" [routerLink]="['/dos']" >
+                <div class="layer d-flex align-items-center justify-content-center">
+                   <ion-item color="primary">                       
+                       <h1 class="h1 font-weight-bold text-center">Filtros Interiores</h1>                        
+                   </ion-item>                   
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="banner" style="background-image: url(/assets/img/tanques.jpeg);" [routerLink]="['/tres']" >
+                <div class="layer d-flex align-items-center justify-content-center">
+                    <ion-item color="primary">
+                        <h2 class="h1 font-weight-bold text-center">Tanques Almacenamiento</h2>
+                       
+                    </ion-item>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="banner" style="background-image: url(/assets/img/aire.jpeg);" [routerLink]="['/apoyo']" >
+                <div class="layer d-flex align-items-center justify-content-center">
+                    <ion-item color="primary">
+                       
+                        <h1 class="h1 font-weight-bold text-center">Servicios de Apoyo</h1>
+                    </ion-item>
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slides>
+
+</ion-content>
+
+<app-footer></app-footer>

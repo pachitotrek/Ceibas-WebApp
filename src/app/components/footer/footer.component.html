@@ -1,0 +1,6 @@
+<ion-footer class="footer">  
+    Server status:
+    <span *ngIf="ws.socketStatus" class="text-success">Online</span>
+    <span *ngIf="!ws.socketStatus" class="text-danger">Offline</span>    
+
+</ion-footer>

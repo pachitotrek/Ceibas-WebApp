@@ -1,0 +1,105 @@
+<div class="container-fluid m-0 p-0">
+  <div class="row">
+    <div class="col-sm-12 m-0 p-0">
+      <h4 class="text-center">Filtros Interiores</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!active">
+    <div class="col-sm-12">
+      <app-loading></app-loading>
+    </div>
+  </div>
+  <div class="row" *ngIf="active">
+    <div class="col-sm-4">
+      <ion-card color="medium">
+        <ion-item color="medium" class="mb-2" lines="none">
+          <ion-label>Filtro No 1</ion-label>
+          <ion-button slot="end" (click)="nav(valores[0].id)">
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <actuador [data]="uno.eflder" numero="Efl. Dere"></actuador>
+        <actuador [data]="uno.eflizq" numero="Efl. Izqui"></actuador>
+        <actuador [data]="uno.entrada" numero="Entrada"></actuador>
+        <app-property [data]="uno.turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+        <app-property [data]="uno.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-4">
+      <ion-card color="medium">
+        <ion-item color="medium" class="mb-2" lines="none">
+          <ion-label>Filtro No 2</ion-label>
+          <ion-button slot="end" (click)="nav(valores[1].id)">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <actuador [data]="dos.eflder" numero="Efl. Dere"></actuador>
+        <actuador [data]="dos.eflizq" numero="Efl. Izqui"></actuador>
+        <actuador [data]="dos.entrada" numero="Entrada"></actuador>
+        <app-property [data]="dos.turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+        <app-property [data]="dos.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-4">
+      <ion-card color="medium">
+        <ion-item color="medium" class="mb-2" lines="none">
+          <ion-label>Filtro No 3</ion-label>
+          <ion-button slot="end" (click)="nav(valores[2].id)">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <actuador [data]="tres.eflder" numero="Efl. Dere"></actuador>
+        <actuador [data]="tres.eflizq" numero="Efl. Izqui"></actuador>
+        <actuador [data]="tres.entrada" numero="Entrada"></actuador>
+        <app-property [data]="tres.turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+        <app-property [data]="tres.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-4">
+      <ion-card color="medium">
+        <ion-item color="medium" class="mb-2" lines="none">
+          <ion-label>Filtro No 4</ion-label>
+          <ion-button slot="end" (click)="nav(valores[3].id)">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <actuador [data]="cuatro.eflder" numero="Efl. Dere"></actuador>
+        <actuador [data]="cuatro.eflizq" numero="Efl. Izqui"></actuador>
+        <actuador [data]="cuatro.entrada" numero="Entrada"></actuador>
+        <app-property [data]="cuatro.turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+        <app-property [data]="cuatro.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-4">
+      <ion-card color="medium">
+        <ion-item color="medium" class="mb-2" lines="none">
+          <ion-label>Filtro No 5</ion-label>
+          <ion-button slot="end" (click)="nav(valores[4].id)">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <actuador [data]="cinco.eflder" numero="Efl. Dere"></actuador>
+        <actuador [data]="cinco.eflizq" numero="Efl. Izqui"></actuador>
+        <actuador [data]="cinco.entrada" numero="Entrada"></actuador>
+        <app-property [data]="cinco.turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+        <app-property [data]="cinco.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-4">
+      <ion-card color="medium">
+        <ion-item color="medium" class="mb-2" lines="none">
+          <ion-label>Filtro No 6</ion-label>
+          <ion-button slot="end" (click)="nav(valores[5].id)">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <actuador [data]="seis.eflder" numero="Efl. Dere"></actuador>
+        <actuador [data]="seis.eflizq" numero="Efl. Izqui"></actuador>
+        <actuador [data]="seis.entrada" numero="Entrada"></actuador>
+        <app-property [data]="seis.turbiedad" titulo="Turbiedad" pro="NTU"></app-property>
+        <app-property [data]="seis.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+  </div>
+
+</div>

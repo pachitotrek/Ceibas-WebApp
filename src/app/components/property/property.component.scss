@@ -1,0 +1,57 @@
+.shape{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 5px; 
+}
+
+
+.font{
+    color: var(--ion-color-dark-tint);
+}
+
+.alarma{
+background: linear-gradient(270deg, #ff0202, #f3a1a1);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 3s ease infinite;
+-moz-animation: AnimationName 3s ease infinite;
+animation: AnimationName 3s ease infinite;
+}
+
+.primero{
+    background-color: rgb(255, 255, 00);
+}
+.tercero{
+    background-color: rgb(255, 125, 255);
+}
+.second{
+    background-color: rgb(255, 255, 192);
+}
+.cuatro{
+    background-color: rgb(255, 0, 255);
+}
+
+.box{
+    background-color: var(--ion-color-dark-tint);
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

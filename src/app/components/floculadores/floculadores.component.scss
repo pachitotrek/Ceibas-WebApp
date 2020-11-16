@@ -1,0 +1,23 @@
+.shape{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 5px; 
+}
+.shape-two{
+    height: 70px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.box{
+    background-color: var(--ion-color-tertiary);
+    border-radius: 10px;
+}
+.fondo{
+    background-color: var(--ion-color-medium);
+    border-radius: 15px;
+}

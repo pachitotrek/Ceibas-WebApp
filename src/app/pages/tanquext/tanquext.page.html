@@ -1,0 +1,44 @@
+<ion-header>
+<app-menu></app-menu>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>SISTEMA DE APOYO</h3>
+      </div>
+    </div>
+    <div class="row" *ngIf="active">
+      <div class="col-sm-6 text-center">
+        <ion-card class="pb-5" color="medium">          
+          <h4>TANQUE ELEVADO</h4>
+          <app-volumen [data]="data.nivel"></app-volumen>
+          <actuador [data]="data.actuador" numero="1"></actuador>
+        </ion-card>
+      </div>
+      <div class="col-sm-6 text-center">
+        <ion-card color="medium" text-center>          
+          <h4>AIRE</h4>
+          <div class="text-center mb-3">
+            <img src="/assets/icon/aire_para_filtros.svg" class="img-fluid"  alt="" style="height: 100px;">
+          </div>         
+          <actuador [data]="data.aire_actuador" numero="1"></actuador>
+        </ion-card>
+
+      </div>
+
+    </div>
+    <div class="row" *ngIf="!active">
+      <div class="col-sm-12">
+        <div class="text-center">
+          <app-loading></app-loading>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
+
+<app-footer></app-footer>

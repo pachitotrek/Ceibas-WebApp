@@ -1,0 +1,7 @@
+{
+  "name": "websaufer",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

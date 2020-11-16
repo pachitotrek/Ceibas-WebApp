@@ -1,0 +1,102 @@
+<div class="row" *ngIf="active">
+  <div class="col-sm-6">
+    <div class="row fondo">
+      <div class="col-sm-6">
+        <ion-card color="medium" class="p-0 mt-1 ml-0 mr-0">
+          <ion-item color="medium" class="mb-2" lines="none">
+            <ion-label>Tanque No 1</ion-label>
+            <ion-button slot="end" (click)="nav(1)">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+          </ion-item>
+          <div class="text-center">
+            <app-volumen [data]="uno.nivel"></app-volumen>
+            <app-property titulo="pH" [data]="uno.ph" pro="pH"></app-property>
+            <app-property titulo="Cloro" [data]="uno.cloro" pro="ppm"></app-property>
+          </div>
+        </ion-card>
+      </div>
+      <div class="col-sm-6">
+        <ion-card color="medium" class="p-0 mt-1 ml-0 mr-0">
+          <ion-item color="medium" class="mb-2" lines="none">
+            <ion-label>Tanque No 2</ion-label>
+            <ion-button slot="end" (click)="nav(2)">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+          </ion-item>
+          <div class="text-center">
+            <app-volumen [data]="dos.nivel"></app-volumen>
+            <app-property titulo="pH" [data]="dos.ph" pro="pH"></app-property>
+            <app-property titulo="Cloro" [data]="dos.cloro" pro="ppm"></app-property>
+          </div>
+        </ion-card>
+      </div>
+      <div class="col-sm-6">
+        <ion-card color="medium" class="p-0 mt-1 ml-0 mr-0">
+          <ion-item color="medium" class="mb-2" lines="none">
+            <ion-label>Tanque No 3</ion-label>
+            <ion-button slot="end" (click)="nav(3)">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+          </ion-item>
+          <div class="text-center">
+            <app-volumen [data]="tres.nivel"></app-volumen>
+            <app-property titulo="pH" [data]="tres.ph" pro="pH"></app-property>
+            <app-property titulo="Cloro" [data]="tres.cloro" pro="ppm"></app-property>
+          </div>
+        </ion-card>
+      </div>
+      <div class="col-sm-12">
+        <div class="text-center mb-4 mt-2">
+          <actuador numero="Valvula" [data]="data.actuador_uno"></actuador>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-6">
+        <ion-card color="medium" class="p-0 mt-1 ml-0 mr-0">
+          <ion-item color="medium" class="mb-2" lines="none">
+            <ion-label>Tanque No 4</ion-label>
+            <ion-button slot="end" (click)="nav(4)">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+          </ion-item>
+          <div class="text-center">
+            <app-volumen [data]="cuatro.nivel"></app-volumen>
+            <app-property titulo="pH" [data]="cuatro.ph" pro="pH"></app-property>
+            <app-property titulo="Cloro" [data]="cuatro.cloro" pro="ppm"></app-property>
+          </div>
+          <div class="text-center mb-4 mt-4 fondo">
+            <actuador numero="Valvula" [data]="data.actuador_dos"></actuador>
+          </div>
+        </ion-card>
+      </div>
+      <div class="col-sm-6">
+        <ion-card color="medium" class="p-0 mt-1 ml-0 mr-0">
+          <ion-item color="medium" class="mb-2" lines="none">
+            <ion-label>Tanque No 5</ion-label>
+            <ion-button slot="end" (click)="nav(5)">
+              <ion-icon slot="icon-only" name="add"></ion-icon>
+            </ion-button>
+          </ion-item>
+          <div class="text-center">
+            <app-volumen [data]="cinco.nivel"></app-volumen>
+            <app-property titulo="pH" [data]="cinco.ph" pro="pH"></app-property>
+            <app-property titulo="Cloro" [data]="cinco.cloro" pro="ppm"></app-property>
+          </div>
+          <div class="text-center mb-4 mt-4 fondo">
+            <actuador numero="Valvula" [data]="data.actuador_tres"></actuador>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="!active">
+  <div class="col-sm-12">
+    <app-loading></app-loading>
+  </div>
+</div>
+

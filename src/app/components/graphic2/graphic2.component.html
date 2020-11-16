@@ -1,0 +1,37 @@
+<ion-content>
+
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-sm-12">
+        <ion-item color="light" class="mb-2" lines="none" text-center>
+          <ion-label>Tanque No {{numero}}</ion-label>
+          <ion-button slot="end" (click)="dismiss()">
+            <ion-icon slot="icon-only" name="close"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </div>
+  
+    </div>
+    <div class="row" *ngIf="active">
+      <div class="col-sm-4">
+        <div style="display: block;">
+          <app-graphic3 [data]="data.nivel" titulo="Nivel"></app-graphic3>      
+        </div>  
+      </div>
+      <div class="col-sm-4">
+        <div style="display: block;">
+          <app-graphic3 [data]="data.ph" titulo="pH"></app-graphic3>        
+        </div>  
+      </div>
+      <div class="col-sm-4">
+        <div style="display: block;">
+           <app-graphic3 [data]="data.cloro" titulo="Cloro"></app-graphic3>         
+        </div>  
+      </div>
+    </div>
+    <div class="row" *ngIf="!active">
+      <app-loading></app-loading>
+    </div>
+  </div>
+
+</ion-content>

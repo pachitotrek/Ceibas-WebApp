@@ -1,0 +1,50 @@
+<ion-header>
+  <app-menu></app-menu>
+</ion-header>
+<ion-content>
+  <div class="container" *ngIf="active">
+    <div class="row">
+      <div class="col-sm-12">
+        <ion-item color="light" class="mb-2" lines="none" text-center>
+          <ion-label>Filtro No {{id}}</ion-label>
+        </ion-item>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <app-graphic3 [data]="data.nivel" titulo="Nivel"></app-graphic3>
+      </div>
+      <div class="col-sm-6">
+        <app-graphic3 [data]="data.turbiedad" titulo="Turbiedad"></app-graphic3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <actuador [data]="data.entrada" numero="Entrada"></actuador>
+        <actuador [data]="data.desague" numero="Desague"></actuador>
+      </div>
+      <div class="col-sm-6">
+        <actuador [data]="data.efluente_der" numero="Efl.Dere"></actuador>
+        <actuador [data]="data.efluente_izq" numero="Efl.Izqui"></actuador>
+      </div>
+      <div class="col-sm-6">
+        <actuador [data]="data.lavadoder" numero="lav. Dere"></actuador>
+        <actuador [data]="data.lavadoizq" numero="lav. Izqui"></actuador>
+      </div>
+      <div class="col-sm-6">
+        <actuador [data]="data.soplader" numero="Sopl. Dere"></actuador>
+        <actuador [data]="data.soplaizq" numero="Sopl. Izqui"></actuador>
+      </div>
+    </div>    
+  </div>
+
+  <div class="container" *ngIf="!active">
+    <div class="row" *ngIf="!active">
+      <div class="col-sm-12">
+        <app-loading></app-loading>
+      </div>
+  
+    </div>
+  </div>
+  
+</ion-content>

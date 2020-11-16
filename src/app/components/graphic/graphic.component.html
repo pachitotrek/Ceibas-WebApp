@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="mt-3">
+        <ion-list>
+          <ion-radio-group>
+            <ion-list-header>
+              <h5 class="text-center">
+                Generar gráfica de:
+              </h5>
+            </ion-list-header>
+            <ion-item *ngFor="let x of valores">
+              <ion-label>{{x.titulo}}</ion-label>
+              <ion-radio slot="start" [value]="x.id" (ionSelect)="emitir($event)"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div style="display: block;" *ngIf="active">
+        <div [chart]="chart"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,80 @@
+<!-- <div class="container box mb-2">
+  <div class="row">
+    <div class="col-sm-2 p-4">
+      <ion-card style="height: 30px;width: 30px;" class="m-0" color="light">
+        <h6 class="p-1 m-0 text-center">1</h6>
+      </ion-card>
+    </div>
+    <div class="col-sm-10 mt-2">
+      <ion-card style="height: 30px;padding-top: 5px;" color="light" class="m-0 mb-4">
+        <div class="d-flex flex-row justify-content-around">
+          <h6 class=" m-0 p-0 text-center">ABIERTO</h6>
+          <h6 class=" m-0 p-0 text-center">POSICION 15%</h6>
+        </div>
+      </ion-card>
+      <ion-card class="m-0 mt-2">
+        <app-property titulo="Caudal"></app-property>
+        <app-property titulo="Caudal"></app-property>
+      </ion-card>
+    </div>
+
+  </div>
+</div> -->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 m-o p-0">
+      <h4 class="text-center m-0 p-0">Filtros Exteriores</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="active">
+    <div class="col-sm-6 p-0">
+      <ion-card color="medium">
+        <ion-card-subtitle class="text-center">Filtro No 1</ion-card-subtitle>
+        <actuador [data]="uno.efluente" numero="Efluente"></actuador>
+        <actuador [data]="uno.entrada" numero="Entrada"></actuador>
+        <app-property [data]="uno.turbiedad" pro="NTTU" titulo="Turbiedad"></app-property>
+        <app-property [data]="uno.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-6 p-0">
+      <ion-card color="medium">
+          <ion-card-subtitle class="text-center">Filtro No 2</ion-card-subtitle>
+          <actuador [data]="dos.efluente" numero="Efluente"></actuador>
+          <actuador [data]="dos.entrada" numero="Entrada"></actuador>
+          <app-property [data]="dos.turbiedad" pro="NTTU" titulo="Turbiedad"></app-property>
+          <app-property [data]="dos.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-6 p-0">
+      <ion-card color="medium">
+          <ion-card-subtitle class="text-center">Filtro No 3</ion-card-subtitle>
+          <actuador [data]="tres.efluente" numero="Efluente"></actuador>
+          <actuador [data]="tres.entrada" numero="Entrada"></actuador>
+          <app-property [data]="tres.turbiedad" pro="NTTU" titulo="Turbiedad"></app-property>
+          <app-property [data]="tres.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-6 p-0">
+      <ion-card color="medium">
+          <ion-card-subtitle class="text-center">Filtro No 4</ion-card-subtitle>
+          <actuador [data]="cuatro.efluente" numero="Efluente"></actuador>
+          <actuador [data]="cuatro.entrada" numero="Entrada"></actuador>
+          <app-property [data]="cuatro.turbiedad" pro="NTTU" titulo="Turbiedad"></app-property>
+          <app-property [data]="cuatro.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+    <div class="col-sm-6 p-0">
+      <ion-card color="medium">
+          <ion-card-subtitle class="text-center">Filtro No 5</ion-card-subtitle>
+          <actuador [data]="cinco.efluente" numero="Efluente"></actuador>
+          <actuador [data]="cinco.entrada" numero="Entrada"></actuador>
+          <app-property [data]="cinco.turbiedad" pro="NTTU" titulo="Turbiedad"></app-property>
+          <app-property [data]="cinco.nivel" titulo="Nivel" pro="m"></app-property>
+      </ion-card>
+    </div>
+
+
+  </div>
+</div>
